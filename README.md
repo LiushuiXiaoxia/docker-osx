@@ -10,7 +10,7 @@
 
 [https://github.com/sickcodes/Docker-OSX](https://github.com/sickcodes/Docker-OSX)
 
-##  1. <a name=''></a>准备工作
+## 准备工作
 
 准备以下工具或环境。
 
@@ -33,7 +33,7 @@ Ubuntu电脑需要CPU支持虚拟化，否则无法使用。重启电脑，进�
 
 ![VTx & VTd](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/4.jpg)
 
-##  2. <a name='Docker'></a>安装Docker
+## 安装Docker
 
 Ubuntu 安装docker还是比较简单，可以网上找资料，安装命令如下：
 
@@ -67,7 +67,7 @@ sudo docker pull sickcodes/docker-osx:big-sur
 sudo docker pull sickcodes/docker-osx:naked
 ```
 
-##  3. <a name='OSX'></a>安装OSX
+## 安装OSX
 
  安装必要软件，这里官网都有介绍，直接复制即可。
 
@@ -150,9 +150,9 @@ sudo docker run -it \
 
 到此系统安装就已经成功。
 
-##  4. <a name='-1'></a>后续
+## 后续
 
-###  4.1. <a name='-1'></a>如何重启系统?
+### 如何重启系统?
 
 因为我这个是使用docker来启动的，后面如果保留并重启系统呢？
 
@@ -171,7 +171,7 @@ sudo docker start -ai xxxxx
 
 ![启动](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/8-1.png)
 
-###  4.2. <a name='Docker-1'></a>如何移植Docker镜像?
+### 如何移植Docker镜像?
 
 当前在本地电脑已经可以了，docker是可以移植的，那么如果在其他电脑运行？
 
@@ -207,8 +207,10 @@ sudo docker run -it \
 
 ![启动](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/9-4.png)
 
-##  5. <a name='-1'></a>相关资料
+## 相关资料
 
 [DOCKER OSX](https://hub.docker.com/r/sickcodes/docker-osx)
 
 [DOCKER OSX Github](https://github.com/sickcodes/Docker-OSX)
+
+[使用Docker安装OSX](https://github.com/LiushuiXiaoxia/docker-osx)
