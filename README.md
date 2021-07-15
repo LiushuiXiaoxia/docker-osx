@@ -17,21 +17,21 @@
 * 一个工作电脑，可以用来上网查资料，最好同时具备科学上网能力，我使用的是MacBook Pro。
 * 一个安装好ubuntu系统的电脑，安装必要的工具，同时修改相应的APT源。建议配置较好，至少8G内存，200G。我的是Intel Core i7、内存32G、磁盘4T。
 
-![Ubuntu](images/1.png)
+![Ubuntu](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/1.png)
 
-![MacBook Pro](images/2.png)
+![MacBook Pro](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/2.png)
 
 安装好Ubuntu系统后，工作电脑可以使用ssh远程登录到ubuntu。
 
 如果有多个显示器、键盘鼠标，当然最好，可以很容操作2台电脑。如果没有这个条件，需要在Ubuntu上开启vnc功能，工作电脑可以需要远程桌面到Ubuntu。因为我用的是Ubuntu 20.04，可以很容易的开启，其他版本可以网络查询相关资料。
 
-![ssh & vnc](images/3.png)
+![ssh & vnc](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/3.png)
 
-![ssh & vnc](images/3-1.png)
+![ssh & vnc](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/3-1.png)
 
 Ubuntu电脑需要CPU支持虚拟化，否则无法使用。重启电脑，进入bios设置，以下为我这边的，不同电脑可能会不一样。
 
-![VTx & VTd](images/4.jpg)
+![VTx & VTd](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/4.jpg)
 
 ## 安装Docker
 
@@ -112,41 +112,41 @@ sudo docker run -it \
 
 **注意:** 因为需要访问github，如果超时或者访问失败建议开启梯子试试。
 
-![安装](images/5.png)
+![安装](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/5.png)
 
 选择磁盘
 
-![安装](images/6.png)
+![安装](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/6.png)
 
 进入界面
 
-![安装](images/6-1.png)
+![安装](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/6-1.png)
 
 选择磁盘工具进行格式化
 
-![安装](images/6-2.png)
+![安装](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/6-2.png)
 
-![安装](images/6-3.png)
+![安装](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/6-3.png)
 
 关闭窗口选择安装选项，选择同意，然后就是漫长的等待时间。
 
-![安装](images/6-4.png)
+![安装](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/6-4.png)
 
-![安装](images/6-5.png)
+![安装](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/6-5.png)
 
-![安装](images/6-6.png)
+![安装](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/6-6.png)
 
 中间会重启几次，记得每次选项原先格式化的磁盘
 
-![安装](images/7.png)
+![安装](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/7.png)
 
 经过漫长的等待，终于进入到欢迎页面，选择对应的时区语言，设置自己的账号就可以进入系统了。
 
-![安装](images/7-1.png)
+![安装](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/7-1.png)
 
-![安装](images/7-2.png)
+![安装](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/7-2.png)
 
-![安装](images/7-3.png)
+![安装](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/7-3.png)
 
 到此系统安装就已经成功。
 
@@ -167,9 +167,9 @@ sudo docker ps -a
 sudo docker start -ai xxxxx
 ```
 
-![启动](images/8.png)
+![启动](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/8.png)
 
-![启动](images/8-1.png)
+![启动](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/8-1.png)
 
 ### 如何移植Docker镜像?
 
@@ -183,7 +183,7 @@ sudo find /var/lib/docker -size +10G | grep mac_hdd_ng.img
 
 这个文件很大，我这边大概30G。
 
-![启动](images/9.png)
+![启动](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/9.png)
 
 使用`naked`启动，同时附上备份的文件，添加参数`-e RAM=20`，这个表示虚拟系统使用的内存大小，可以根据自己的硬件环境选择合适的大小。
 
@@ -199,13 +199,13 @@ sudo docker run -it \
     sickcodes/docker-osx:naked
 ```
 
-![启动](images/9-2.png)
+![启动](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/9-2.png)
 
-![启动](images/9-3.png)
+![启动](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/9-3.png)
 
 启动后，系统显示内存大约为20G。
 
-![启动](images/9-4.png)
+![启动](https://github.com/LiushuiXiaoxia/docker-osx/raw/main/images/9-4.png)
 
 ## 相关资料
 
