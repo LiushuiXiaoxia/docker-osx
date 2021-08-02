@@ -214,3 +214,5 @@ sudo docker run -it \
 [DOCKER OSX Github](https://github.com/sickcodes/Docker-OSX)
 
 [使用Docker安装OSX](https://github.com/LiushuiXiaoxia/docker-osx)
+
+[哔哩哔哩视频](https://www.bilibili.com/video/BV1W64y1B7TP)
